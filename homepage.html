@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Axis Surveyors</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Particle Background Container -->
+<div id="particles-js"></div>
+
+<header>
+  <div class="logo">
+    <img src="images/axis-logo.png" alt="Axis Surveyors Logo">
+  </div>
+  <div class="menu-icon" id="menuToggle">&#9776;</div>
+</header>
+
+    <aside id="sidebar">
+    <div class="close-icon" id="closeSidebar">&times;</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="homepage.html" id="nav-home"><i class="fas fa-house"></i> Home</a>
+      <a href="about.html" id="nav-about"><i class="fas fa-user"></i> About</a>
+      <a href="services.html" id="nav-services"><i class="fas fa-tools"></i> Services</a>
+      <a href="projects.html" id="nav-projects"><i class="fas fa-briefcase"></i> Projects</a>
+      <a href="contact.html" id="nav-contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
+    </aside>
+
+
+  <div id="contentWrapper">
+    <main>
+      <!-- HOMEPAGE CONTAINER -->
+      <section id="home" class="content-section">
+          <!-- Hero Section -->
+          <div class="hero-section-slideshow">
+            <div class="hero-slide active" style="background-image: url('images/slide\ \(1\).jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/slide\ \(2\).jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/');"></div>
+
+            <div class="hero-overlay">
+              <div class="hero-content">
+                <h1 class="hero-title">Reliable. Professional. Always Precise.</h1>
+                <p class="hero-subtext">Trusted leading land surveying and consultancy solutions across Kenya.</p>
+                <button class="hero-cta" onclick="showSection('services')">See Our Services</button>
+              </div>
+            </div>
+          </div>
+
+
+        <!-- Golden Divider -->
+        <div class="gold-divider"></div>
+
+        <!-- About Short Blurb (within homepage still) -->
+        <div class="home-about-blurb">
+          <h2>Who We Are</h2>
+          <p>
+            +Axis Surveys is a premier land surveying and consultancy firm based in Kenya, dedicated to delivering top-tier solutions in all matters related to land.
+            With over <strong>three years(3+)</strong> of experience both within and outside Kenya, +Axis Surveys has built a reputation for <strong>excellence,professionalism, and reliability.</strong>
+            Utilizing the latest in surveying technology and advanced data analysis techniques, we ensure <strong>precision, efficiency, and accuracy</strong> in every project.
+            Our modern approach to land surveying allows us to offer unmatched services across a wide range of land-related processes.
+
+          </p>
+          <button class="hero-cta" onclick="showSection('about')">More About Us</button>
+        </div>
+
+                  <!-- Services Snapshot -->
+          <section class="services-snapshot">
+              <!-- Background Video -->
+              <div class="services-video-bg">
+                <video class="bg-video" autoplay muted loop playsinline>
+                  <source src="istockphoto-129317524-640_adpp_is.mp4" type="video/mp4">
+                </video>
+              </div>
+
+            <div class="services-content">
+                <h2 class="section-title">Our Core Services</h2>
+                <div class="services-grid">
+
+                  <!-- Land Surveying & Mapping -->
+                  <div class="service-card">
+                    <i class="fas fa-map service-icon"></i>
+                    <h3>Land Surveying & Mapping</h3>
+                    <p>We deliver precise land measurements and mapping using cutting-edge technology for legal and planning purposes.</p>
+                    <button class="service-cta" onclick="showSection('services')">Learn More</button>
+                  </div>
+
+                  <!-- Title Deed Processing -->
+                  <div class="service-card">
+                    <i class="fas fa-file-signature service-icon"></i>
+                    <h3>Title Deed Processing</h3>
+                    <p>We handle all procedures needed to acquire, update, or correct your title deed in compliance with Kenyan law.</p>
+                    <button class="service-cta" onclick="showSection('services')">Learn More</button>
+                  </div>
+
+                  <!-- Land Subdivision & Amalgamation -->
+                  <div class="service-card">
+                    <i class="fas fa-object-group service-icon"></i>
+                    <h3>Subdivision & Amalgamation</h3>
+                    <p>Whether splitting land or merging plots, we ensure your plans meet all regulatory and zoning requirements.</p>
+                    <button class="service-cta" onclick="showSection('services')">Learn More</button>
+                  </div>
+
+                  <!-- Succession & Land Transfer -->
+                  <div class="service-card">
+                    <i class="fas fa-handshake service-icon"></i>
+                    <h3>Succession & Transfer</h3>
+                    <p>We assist families and institutions with lawful land succession and ownership transfers with expert legal guidance.</p>
+                    <button class="service-cta" onclick="showSection('services')">Learn More</button>
+                  </div>
+
+                  <!-- Lease Renewal & Mutation -->
+                  <div class="service-card">
+                    <i class="fas fa-sync-alt service-icon"></i>
+                    <h3>Lease Renewal & Mutation</h3>
+                    <p>Keep your land records up-to-date with fast and compliant lease renewals and mutation processing.</p>
+                    <button class="service-cta" onclick="showSection('services')">Learn More</button>
+                  </div>
+
+                  <!-- Boundary Alignment & Area Confirmation -->
+                  <div class="service-card">
+                    <i class="fas fa-draw-polygon service-icon"></i>
+                    <h3>Boundary & Area Confirmation</h3>
+                    <p>We help resolve boundary disputes and validate land size by remeasuring and aligning with official maps.</p>
+                    <button class="service-cta" onclick="showSection('services')">Learn More</button>
+                  </div>
+
+                  <!-- Rebeaconing & Topographic Surveys -->
+                  <div class="service-card">
+                    <i class="fas fa-bezier-curve service-icon"></i>
+                    <h3>Rebeaconing & Topographic Surveys</h3>
+                    <p>We restore land beacons and conduct detailed topographic surveys for planning, engineering, and design.</p>
+                    <button class="service-cta" onclick="showSection('services')">Learn More</button>
+                  </div>
+
+                  <!-- Land Planning & Setting Out -->
+                  <div class="service-card">
+                    <i class="fas fa-compass service-icon"></i>
+                    <h3>Planning & Setting Out</h3>
+                    <p>From layout plans to pegging foundations, we ensure your land development follows exact blueprints and approvals.</p>
+                    <button class="service-cta" onclick="showSection('services')">Learn More</button>
+                  </div>
+
+                  <!-- Land Consultancy -->
+                  <div class="service-card">
+                    <i class="fas fa-user-tie service-icon"></i>
+                    <h3>All Land Consultancy</h3>
+                    <p>We offer comprehensive advisory services on all land matters — legal, technical, or regulatory.</p>
+                    <button class="service-cta" onclick="showSection('services')">Learn More</button>
+                  </div>
+
+                </div>
+              </div>
+
+          </section>
+
+         <!-- Why Choose Us Section -->
+          <div class="values-section">
+            <h2 class="section-title" data-aos="fade-up">Why Choose <span class="highlight">+Axis Surveys</span>?</h2>
+            <div class="values-grid">
+
+              <!-- Cutting-edge Tech -->
+              <div class="value-box" data-aos="fade-up">
+                <i class="fas fa-microscope"></i>
+                <h3>Cutting-edge Equipment</h3>
+                <p>We deploy the latest survey tools and geospatial software to guarantee reliable, high-precision outcomes.</p>
+              </div>
+
+              <!-- Fast, Accurate, Dependable -->
+              <div class="value-box" data-aos="fade-up">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Fast & Dependable</h3>
+                <p>Get results you can act on quickly — our team prioritizes accuracy, speed, and consistency across every project.</p>
+              </div>
+
+              <!-- Local & Global Experience -->
+              <div class="value-box" data-aos="fade-up">
+                <i class="fas fa-globe-africa"></i>
+                <h3>Proven Experience</h3>
+                <p>We’ve delivered on projects across Kenya and beyond — bringing global insights to local land challenges.</p>
+              </div>
+
+              <!-- All-in-One Solutions -->
+              <div class="value-box" data-aos="fade-up">
+                <i class="fas fa-tools"></i>
+                <h3>Complete Land Solutions</h3>
+                <p>From initial surveys to final registration, we handle every step — no need to deal with multiple consultants.</p>
+              </div>
+
+            </div>
+
+            <!-- Brand Closing Remark -->
+              <div class="closing-remark" data-aos="fade-in">
+                <p><strong>+Axis Surveys</strong> — your reliable partner in unlocking the full potential of your land.</p>
+              </div>
+
+          </div>
+
+
+            <footer class="main-footer">
+            <div class="footer-top">
+              <div class="footer-brand">
+                <h2 class="footer-logo">Axis+ Surveys</h2>
+                <p><i class="fas fa-clock"></i> Mon - Fri: 08:00 - 18:00</p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+254746177096">(+254) 746 177 096</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=axissurveyskenya@gmail.com&su=Inquiry&body=Hello Axis+ Surveys," target="_blank">axissurveyskenya@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/place/Kiambu+Town,+Kenya" target="_blank" title="Find Us on Map">Find Us</a></p>
+
+              </div>
+
+              <div class="footer-links">
+                <div>
+                  <h4>About Us</h4>
+                  <ul>
+                    <li><a href="about.html">Our Company</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Our Location</h4>
+                  <ul>
+                    <li>Kiambu</li>
+                    <li>Kikuyu</li>
+                    <li>Wangige</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Newsletter</h4>
+                  <p>Stay updated with our latest services</p>
+                  <div class="footer-socials">
+                    <a href="https://web.facebook.com/profile.php?id=61571776599909"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/axissurveyske/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/254746177096" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-bottom">
+              <p>&copy; 2025 Axis+ Surveys. All Rights Reserved | Powered by Startappz Limited</p>
+            </div>
+
+            <button id="scrollToTopBtn" title="Back to Top">↑</button>
+
+          </footer>
+
+        </section>
+    </main>
+  </div>
+<!-- FAQ Section (Your current HTML code above this) -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const questions = document.querySelectorAll('.faq-question');
+
+      questions.forEach(q => {
+        q.addEventListener('click', () => {
+          q.classList.toggle('active');
+          const answer = q.nextElementSibling;
+          answer.classList.toggle('show');
+        });
+      });
+    });
+  </script>
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<!-- Particles JS -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 60 },
+      color: { value: "#FFD700" },
+      shape: { type: "circle" },
+      opacity: {
+        value: 0.3,
+        random: true,
+      },
+      size: {
+        value: 2.5,
+        random: true,
+      },
+      move: {
+        direction: "top",
+        speed: 0.6,
+      },
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: "repulse" },
+      },
+    },
+    retina_detect: true,
+  });
+</script>
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
