@@ -7,23 +7,22 @@
   <link rel="stylesheet" href="style.css" />
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- AOS CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-
 </head>
 <body>
 
   <!-- Particle Background Container -->
-<div id="particles-js"></div>
+  <div id="particles-js"></div>
 
-<header>
-  <div class="logo">
-    <img src="images/axis-logo.png" alt="Axis Surveyors Logo">
-  </div>
-  <div class="menu-icon" id="menuToggle">&#9776;</div>
-</header>
+  <header>
+    <div class="logo">
+      <img src="images/axis-logo.png" alt="Axis Surveyors Logo">
+    </div>
+    <div class="menu-icon" id="menuToggle">&#9776;</div>
+  </header>
 
-    <aside id="sidebar">
+  <aside id="sidebar">
     <div class="close-icon" id="closeSidebar">&times;</div>
     <nav class="nav-links" id="navLinks">
       <a href="homepage.html" id="nav-home"><i class="fas fa-house"></i> Home</a>
@@ -32,52 +31,44 @@
       <a href="projects.html" id="nav-projects"><i class="fas fa-briefcase"></i> Projects</a>
       <a href="contact.html" id="nav-contact"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
-
-    </aside>
-
+  </aside>
 
   <div id="contentWrapper">
-    <ma>
+    <main>
+      <section id="services" class="content-section">
 
-
-        <section id="services" class="content-section">
-
-          <div class="services-hero-slideshow">
-            <div class="services-slide static-bg" style="background-image: url('images/drone1.jpeg');"></div>
-
-            <div class="overlay"></div>
-
-            <div class="hero-text">
-              <h1>Our Land Surveying & Planning Services</h1>
-              <p class="subtitle">From precise measurements to seamless planning — we’ve got your land covered.</p>
-              <p>
-                At Axis+ Surveys, we combine advanced technology, industry expertise, and unwavering precision to deliver exceptional land surveying solutions.
-                Whether you’re developing property, verifying boundaries, or planning infrastructure, our team ensures every detail is accurate and reliable.
-              </p>
-              <p>
-                We don’t just measure land — we help you make smarter, faster, and more secure decisions for your property investments.
-              </p>
-            </div>
+        <div class="services-hero-slideshow">
+          <div class="services-slide static-bg" style="background-image: url('images/drone1.jpeg');"></div>
+          <div class="overlay"></div>
+          <div class="hero-text">
+            <h1>Our Land Surveying & Planning Services</h1>
+            <p class="subtitle">From precise measurements to seamless planning — we’ve got your land covered.</p>
+            <p>
+              At Axis+ Surveys, we combine advanced technology, industry expertise, and unwavering precision to deliver exceptional land surveying solutions.
+              Whether you’re developing property, verifying boundaries, or planning infrastructure, our team ensures every detail is accurate and reliable.
+            </p>
+            <p>
+              We don’t just measure land — we help you make smarter, faster, and more secure decisions for your property investments.
+            </p>
           </div>
+        </div>
 
-          
         <!-- Golden Divider -->
         <div class="gold-divider"></div>
 
         <section id="why-choose-us">
-        <h2>Why Choose +Axis Surveys?</h2>
-        <ul>
-          <li>✅ Cutting-edge survey equipment and software</li>
-          <li>✅ Fast, accurate, and dependable results</li>
-          <li>✅ Experience in both local and international land projects</li>
-          <li>✅ Complete end-to-end land solutions under one roof</li>
-        </ul>
-      </section>
+          <h2>Why Choose +Axis Surveys?</h2>
+          <ul>
+            <li>✅ Cutting-edge survey equipment and software</li>
+            <li>✅ Fast, accurate, and dependable results</li>
+            <li>✅ Experience in both local and international land projects</li>
+            <li>✅ Complete end-to-end land solutions under one roof</li>
+          </ul>
+        </section>
 
 <!-- SERVICES GRID -->
 
             <div class="services-grid">
-
 
                 <div class="services-video-bg">
                 <video class="bg-video" autoplay muted loop playsinline>
@@ -85,12 +76,12 @@
                 </video>
               </div>
 
-
                   <!-- Drone Survey -->
                   <div class="service-card">
-                    <div class="service-image">
-                      <img src="images/drone1.jpeg" alt="Drone Survey">
-                    </div>
+  <div class="service-image slideshow-container">
+    <img class="slide active" src="images/drone1.jpeg" alt="Drone 1">
+    <img class="slide" src="images/drone2.jpeg" alt="Drone 2">
+  </div>
                     <h3>Drone Survey</h3>
                     <p>High-resolution aerial mapping for fast, accurate, and large-scale data collection using the latest drone technology. Ideal for projects that demand efficiency without sacrificing accuracy.</p>
                     <ul class="service-benefits">
@@ -102,7 +93,7 @@
                   </div>
 
                   <!-- Levelling -->
-                  <div class="service-card slideshow" data-images='["images/levelling1.jpeg", "images/levelling2.jpeg", "images/levelling3.jpeg"]'>
+                  <div class="service-card">
                     <div class="service-image">
                       <img src="images/levelling1.jpeg" alt="Levelling Service">
                     </div>
@@ -119,7 +110,7 @@
                   <!-- Land Subdivision & Planning -->
                   <div class="service-card">
                     <div class="service-image">
-                      <img src="images/drone2.jpeg" alt="Land Subdivision & Planning">
+                      <img src="images/subdivision1.jpeg" alt="Land Subdivision & Planning">
                     </div>
                     <h3>Land Subdivision & Planning</h3>
                     <p>Professional division of land into plots while ensuring legal compliance, infrastructure planning, and maximum usability for future developments.</p>
@@ -134,7 +125,7 @@
                   <!-- Succession & Land Transfer -->
                   <div class="service-card">
                     <div class="service-image">
-                      <img src="images/drone1.jpeg" alt="Succession & Transfer">
+                      <img src="images/transfer1.png" alt="Succession & Transfer">
                     </div>
                     <h3>Succession & Land Transfer</h3>
                     <p>Guiding you through smooth land ownership changes with proper documentation and expert legal assistance to avoid disputes and delays.</p>
@@ -149,7 +140,7 @@
                   <!-- Lease Renewal & Mutation Processing -->
                   <div class="service-card">
                     <div class="service-image">
-                      <img src="images/drone2.jpeg" alt="Lease Renewal">
+                      <img src="images/lease1.png" alt="Lease Renewal">
                     </div>
                     <h3>Lease Renewal & Mutation Processing</h3>
                     <p>Fast and reliable handling of property renewals and mutation records to ensure your land remains legally recognized without interruptions.</p>
@@ -162,9 +153,9 @@
                   </div>
 
                   <!-- Boundary Alignment & Area Confirmation -->
-                  <div class="service-card slideshow" data-images='["images/rebeaconing1.jpeg", "images/rebeaconing2.jpeg", "images/rebeaconing3.jpeg"]'>
+                  <div class="service-card">
                     <div class="service-image">
-                      <img src="images/rebeaconing1.jpeg" alt="Boundary Alignment">
+                      <img src="images/confirmation1.png" alt="Boundary Alignment">
                     </div>
                     <h3>Boundary Alignment & Area Confirmation</h3>
                     <p>Verifying and restoring property boundaries for peace of mind, preventing disputes, and ensuring accurate land registration.</p>
@@ -178,9 +169,11 @@
 
                   <!-- Rebeaconing & Topographic Surveys -->
                   <div class="service-card">
-                    <div class="service-image">
-                      <img src="images/rebeaconing2.jpeg" alt="Topographic Surveys">
-                    </div>
+  <div class="service-image slideshow-container">
+    <img class="slide active" src="images/rebeaconing2.jpeg" alt="Rebeaconing 1">
+    <img class="slide" src="images/rebeaconing1.jpeg" alt="Rebeaconing 2">
+    <img class="slide" src="images/rebeaconing3.jpeg" alt="Rebeaconing 3">
+  </div>
                     <h3>Rebeaconing & Topographic Surveys</h3>
                     <p>Replacing lost beacons and mapping terrain features for precise planning, environmental studies, and development projects.</p>
                     <ul class="service-benefits">
@@ -194,7 +187,7 @@
                   <!-- Land Planning & Setting Out -->
                   <div class="service-card">
                     <div class="service-image">
-                      <img src="images/levelling2.jpeg" alt="Land Planning">
+                      <img src="images/planning1.png" alt="Land Planning">
                     </div>
                     <h3>Land Planning & Setting Out</h3>
                     <p>Marking exact construction points for flawless building alignment and optimal site use, ensuring no costly layout mistakes.</p>
@@ -209,7 +202,7 @@
                   <!-- All Land Consultancy Services -->
                   <div class="service-card">
                     <div class="service-image">
-                      <img src="images/drone1.jpeg" alt="Land Consultancy">
+                      <img src="images/consult1.png" alt="Land Consultancy">
                     </div>
                     <h3>All Land Consultancy Services</h3>
                     <p>Comprehensive advice and guidance for all land-related matters, tailored to your unique project needs and legal requirements.</p>
@@ -222,229 +215,214 @@
                   </div>
 
                 </div>
-<section id="tools-tech" class="tools-section">
-  <h2>Tools & Tech We Use</h2>
-
-  <div class="tools-carousel">
-    <div class="tools-slide active">
-      <img src="images/drone1.jpeg" alt="High-resolution Drone">
-      <div class="tools-overlay">
-        <h3>High-resolution Drones</h3>
-      <p>
-        We use advanced drones equipped with 4K cameras and LiDAR to capture
-        detailed aerial imagery. This allows us to map large areas quickly,
-        monitor construction progress, and perform volumetric analysis with
-        unmatched accuracy.
-      </p>
-      </div>
-    </div>
-
-    <div class="tools-slide">
-      <img src="images/drone2.jpeg" alt="GNSS Receiver">
-      <div class="tools-overlay">
-        <h3>GNSS Receivers</h3>
-      <p>
-        Our Trimble and Leica GNSS receivers provide centimeter-level
-        positioning accuracy. They are essential for boundary surveys,
-        geodetic control, and any project requiring precise location data.
-      </p>
-      </div>
-    </div>
-
-    <div class="tools-slide">
-      <img src="images/levelling3.jpeg" alt="Laser Level">
-      <div class="tools-overlay">
-        <h3>Laser Levels & Total Stations</h3>
-      <p>
-        These instruments allow us to perform highly accurate leveling,
-        alignment, and angular measurements, making them indispensable for
-        construction layout and topographic mapping.
-      </p>
-      </div>
-    </div>
-
-    <div class="tools-slide">
-      <img src="images/rebeaconing1.jpeg" alt="GIS & CAD Software">
-      <div class="tools-overlay">
-        <h3>GIS & CAD Software</h3>
-      <p>
-        We use GIS for spatial analysis and CAD for detailed engineering
-        drawings. This combination ensures our survey data is transformed into
-        actionable maps, site plans, and designs.
-      </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="tools-controls">
-    <span class="tools-dot active"></span>
-    <span class="tools-dot"></span>
-    <span class="tools-dot"></span>
-    <span class="tools-dot"></span>
-  </div>
-</section>
 
 
-
-
-
-              <!-- CTA -->
-              <div class="services-cta">
-                <h2>Need Accurate Land Data?</h2>
-                <p>Contact our experts today and let’s get your project started.</p>
-                  <button class="gold-btn" onclick="showSection('contact')">Book a Consultation</button>
+        <!-- Tools & Tech -->
+        <section id="tools-tech" class="tools-section">
+          <h2>Tools & Tech We Use</h2>
+          <div class="tools-carousel">
+            <div class="tools-slide active">
+              <img src="images/drone1.jpeg" alt="High-resolution Drone">
+              <div class="tools-overlay">
+                <h3>High-resolution Drones</h3>
+                <p>
+                  We use advanced drones equipped with 4K cameras and LiDAR to capture
+                  detailed aerial imagery. This allows us to map large areas quickly,
+                  monitor construction progress, and perform volumetric analysis with
+                  unmatched accuracy.
+                </p>
               </div>
-
-
-
-              
-            <footer class="main-footer" data-aos="fade-up" data-aos-delay="600">
-            <div class="footer-top">
-              <div class="footer-brand">
-                <h2 class="footer-logo">Axis+ Surveys</h2>
-                <p><i class="fas fa-clock"></i> Mon - Fri: 08:00 - 18:00</p>
-                <p><i class="fas fa-phone-alt"></i> <a href="tel:+254746177096">(+254) 746 177 096</a></p>
-                <p><i class="fas fa-envelope"></i> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=axissurveyskenya@gmail.com&su=Inquiry&body=Hello Axis+ Surveys," target="_blank">axissurveyskenya@gmail.com</a></p>
-                <a href="https://www.google.com/maps/place/Kiambu+Town,+Kenya" target="_blank" class="find-us-btn" title="Find Us on Map">
-                    <i class="fas fa-map-marker-alt"></i>
-                </a>
-
+            </div>
+            <div class="tools-slide">
+              <img src="images/drone2.jpeg" alt="GNSS Receiver">
+              <div class="tools-overlay">
+                <h3>GNSS Receivers</h3>
+                <p>
+                  Our Trimble and Leica GNSS receivers provide centimeter-level
+                  positioning accuracy. They are essential for boundary surveys,
+                  geodetic control, and any project requiring precise location data.
+                </p>
               </div>
-
-                  <div class="footer-links">
-                    <div>
-                      <h4>About Us</h4>
-                  <ul>
-                    <li><a href="about.html">Our Company</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                  </ul>
-                    </div>
-                    <div>
-                      <h4>Our Location</h4>
-                      <ul>
-                        <li>Kiambu</li>
-                        <li>Kikuyu</li>
-                        <li>Wangige</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4>Newsletter</h4>
-                      <p>Stay updated with our latest services</p>
-                      <div class="footer-socials">
-                        <a href="https://web.facebook.com/profile.php?id=61571776599909"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/axissurveyske/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/254746177096" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="footer-bottom">
-                  <p>&copy; 2025 Axis+ Surveys. All Rights Reserved | Powered by Startappz Limited</p>
-                </div>
-                  <button id="scrollToTopBtn" title="Back to Top">↑</button>
-              </footer>
-
-
+            </div>
+            <div class="tools-slide">
+              <img src="images/levelling3.jpeg" alt="Laser Level">
+              <div class="tools-overlay">
+                <h3>Laser Levels & Total Stations</h3>
+                <p>
+                  These instruments allow us to perform highly accurate leveling,
+                  alignment, and angular measurements, making them indispensable for
+                  construction layout and topographic mapping.
+                </p>
+              </div>
+            </div>
+            <div class="tools-slide">
+              <img src="images/rebeaconing1.jpeg" alt="GIS & CAD Software">
+              <div class="tools-overlay">
+                <h3>GIS & CAD Software</h3>
+                <p>
+                  We use GIS for spatial analysis and CAD for detailed engineering
+                  drawings. This combination ensures our survey data is transformed into
+                  actionable maps, site plans, and designs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tools-controls">
+            <span class="tools-dot active"></span>
+            <span class="tools-dot"></span>
+            <span class="tools-dot"></span>
+            <span class="tools-dot"></span>
+          </div>
         </section>
-   </main>
+
+        <!-- CTA -->
+        <div class="services-cta">
+          <h2>Need Accurate Land Data?</h2>
+          <p>Contact our experts today and let’s get your project started.</p>
+          <button class="gold-btn" onclick="showSection('contact')">Book a Consultation</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer" data-aos="fade-up" data-aos-delay="600">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <h2 class="footer-logo">Axis+ Surveys</h2>
+              <p><i class="fas fa-clock"></i> Mon - Fri: 08:00 - 18:00</p>
+              <p><i class="fas fa-phone-alt"></i> <a href="tel:+254746177096">(+254) 746 177 096</a></p>
+              <p><i class="fas fa-envelope"></i> <a href="mailto:axissurveyskenya@gmail.com">axissurveyskenya@gmail.com</a></p>
+              <a href="https://www.google.com/maps/place/Kiambu+Town,+Kenya" target="_blank" class="find-us-btn" title="Find Us on Map">
+                <i class="fas fa-map-marker-alt"></i>
+              </a>
+            </div>
+            <div class="footer-links">
+              <div>
+                <h4>About Us</h4>
+                <ul>
+                  <li><a href="about.html">Our Company</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Our Location</h4>
+                <ul>
+                  <li>Kiambu</li>
+                  <li>Kikuyu</li>
+                  <li>Wangige</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Newsletter</h4>
+                <p>Stay updated with our latest services</p>
+                <div class="footer-socials">
+                  <a href="https://web.facebook.com/profile.php?id=61571776599909"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/axissurveyske/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://wa.me/254746177096" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Axis+ Surveys. All Rights Reserved | Powered by Startappz Limited</p>
+          </div>
+          <button id="scrollToTopBtn" title="Back to Top">↑</button>
+        </footer>
+      </section>
+    </main>
   </div>
-  </div>
-<!-- FAQ Section (Your current HTML code above this) -->
 
- <!-- Particles.js -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-  particlesJS("particles-js", {
-    particles: {
-      number: { value: 100, density: { enable: true, value_area: 800 } },
-      color: { value: "#FFD700" },
-      shape: { type: "circle" },
-      opacity: { value: 0.5, random: true },
-      size: { value: 3, random: true },
-      line_linked: { enable: false },
-      move: { enable: true, speed: 1, direction: "none", out_mode: "out" }
-    },
-    interactivity: {
-      detect_on: "canvas",
-      events: { onhover: { enable: true, mode: "repulse" } }
-    },
-    retina_detect: true
-  });
-</script>
-
-<!-- AOS (Animate On Scroll) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
-
-<!-- Tools & Tech Carousel -->
-<script>
-  const toolSlides = document.querySelectorAll('.tools-slide');
-  const toolDots = document.querySelectorAll('.tools-dot');
-  let currentTool = 0;
-
-  function showToolSlide(n) {
-    toolSlides.forEach((slide, index) => {
-      slide.classList.remove('active');
-      toolDots[index].classList.remove('active');
+  <!-- Scripts -->
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 100, density: { enable: true, value_area: 800 } },
+        color: { value: "#FFD700" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        line_linked: { enable: false },
+        move: { enable: true, speed: 1, direction: "none", out_mode: "out" }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: { onhover: { enable: true, mode: "repulse" } }
+      },
+      retina_detect: true
     });
-    toolSlides[n].classList.add('active');
-    toolDots[n].classList.add('active');
-  }
+  </script>
 
-  toolDots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      currentTool = index;
-      showToolSlide(currentTool);
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+  <!-- Tools & Tech Carousel -->
+  <script>
+    const toolSlides = document.querySelectorAll('.tools-slide');
+    const toolDots = document.querySelectorAll('.tools-dot');
+    let currentTool = 0;
+
+    function showToolSlide(n) {
+      toolSlides.forEach((slide, index) => {
+        slide.classList.remove('active');
+        toolDots[index].classList.remove('active');
+      });
+      toolSlides[n].classList.add('active');
+      toolDots[n].classList.add('active');
+    }
+
+    toolDots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentTool = index;
+        showToolSlide(currentTool);
+      });
     });
-  });
 
-  setInterval(() => {
-    currentTool = (currentTool + 1) % toolSlides.length;
-    showToolSlide(currentTool);
-  }, 3000);
-
-  showToolSlide(currentTool);
-</script>
-
-<!-- Services Hero Slideshow -->
-<script>
-  let serviceIndex = 0;
-  const serviceSlides = document.querySelectorAll("#services .services-slide");
-
-  function showServiceSlides() {
-    serviceSlides.forEach(slide => slide.style.display = "none");
-    serviceIndex++;
-    if (serviceIndex > serviceSlides.length) { serviceIndex = 1 }
-    serviceSlides[serviceIndex - 1].style.display = "block";
-    setTimeout(showServiceSlides, 5000);
-  }
-
-  showServiceSlides();
-</script>
-
-<!-- Services Grid Card Slideshow -->
-<script>
-  const slideshows = document.querySelectorAll('.slideshow');
-
-  slideshows.forEach(slideshow => {
-    const images = slideshow.getAttribute('data-images').split(',');
-    let current = 0;
     setInterval(() => {
-      current = (current + 1) % images.length;
-      slideshow.style.backgroundImage = `url('${images[current]}')`;
+      currentTool = (currentTool + 1) % toolSlides.length;
+      showToolSlide(currentTool);
     }, 3000);
+
+    showToolSlide(currentTool);
+  </script>
+
+  <!-- Services Hero Slideshow -->
+  <script>
+    let serviceIndex = 0;
+    const serviceSlides = document.querySelectorAll("#services .services-slide");
+
+    function showServiceSlides() {
+      serviceSlides.forEach(slide => slide.style.display = "none");
+      serviceIndex++;
+      if (serviceIndex > serviceSlides.length) { serviceIndex = 1 }
+      serviceSlides[serviceIndex - 1].style.display = "block";
+      setTimeout(showServiceSlides, 5000);
+    }
+
+    showServiceSlides();
+  </script>
+  <script>
+  document.querySelectorAll('#services .service-image').forEach(container => {
+    let slides = container.querySelectorAll('img');
+    if (slides.length <= 1) return; // skip if only 1 image
+
+    let index = 0;
+    slides[index].classList.add('active');
+
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 3000); // switch every 3s
   });
 </script>
 
 
+  <!-- Your custom script -->
   <script src="script.js"></script>
 </body>
 </html>

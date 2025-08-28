@@ -1,11 +1,13 @@
 const menuToggle = document.getElementById('menuToggle');
 const sidebar = document.getElementById('sidebar');
 const closeSidebar = document.getElementById('closeSidebar');
+const contentWrapper = document.getElementById('contentWrapper'); // Get the content wrapper element
 
 // Open sidebar
 if (menuToggle) {
   menuToggle.addEventListener('click', () => {
     sidebar.classList.add('active');
+    contentWrapper.classList.add('shifted'); // Add the shifted class
   });
 }
 
@@ -13,6 +15,7 @@ if (menuToggle) {
 if (closeSidebar) {
   closeSidebar.addEventListener('click', () => {
     sidebar.classList.remove('active');
+    contentWrapper.classList.remove('shifted'); // Remove the shifted class
   });
 }
 
@@ -20,9 +23,9 @@ if (closeSidebar) {
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     sidebar.classList.remove('active');
+    contentWrapper.classList.remove('shifted'); // Remove the shifted class
   });
 });
-
 // Highlight current page in sidebar
 const currentPage = window.location.pathname.split("/").pop();
 document.querySelectorAll('.nav-links a').forEach(link => {
