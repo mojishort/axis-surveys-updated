@@ -128,7 +128,7 @@ header {
 /* Content Wrapper */
 #contentWrapper {
   transition: margin-left 0.3s ease;
-  padding: 2rem;
+  padding: 1cqmax;
 }
 
 #contentWrapper.shifted {
