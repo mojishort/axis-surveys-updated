@@ -1751,6 +1751,7 @@ p {
   color: #ddd;
   max-width: 850px;
   margin: 0 auto;
+  text-align: center;
 }
 
 /* Responsive */
