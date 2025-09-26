@@ -721,11 +721,15 @@ p {
 .contact-info-side p a {
   color: #fff;
   text-decoration: none;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .contact-info-side p a:hover {
   color: #daa520;
 }
+
 
 
 
