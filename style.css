@@ -1716,28 +1716,33 @@ p {
   box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
 
+
 /* Testimonial Section */
 .project-testimonial {
-  height: 130px;
   background: rgba(0,0,0,0.6);
   border-left: 4px solid #FFD700;
   border-right: 4px solid #FFD700;
   border-radius: 8px;
-  padding: 5px;
+  padding: 20px;        /* more padding for breathing room */
   text-align: center;
   font-style: italic;
+  margin-bottom: 40px;  /* ✅ space before next section */
 }
+
 .project-testimonial blockquote {
-  font-size: 1.2rem;
-  line-height: 1.8;
+  font-size: 1.1rem;    /* slightly smaller for mobile readability */
+  line-height: 1.6;
   color: #eee;
+  margin: 0;            /* remove default margins */
 }
+
 .project-testimonial .client {
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 1rem;
   color: #FFD700;
   font-weight: bold;
 }
+
 
 /* Impact Section */
 .project-impact p {
