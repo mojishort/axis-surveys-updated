@@ -667,6 +667,21 @@ p {
   flex-wrap: wrap;
 }
 
+
+
+@media (max-width: 480px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact-info-side {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+
 .contact-form-side, .contact-info-side {
   flex: 1;
   min-width: 300px;
@@ -1411,7 +1426,7 @@ p {
 }
 #services .service-benefits li::before {
   content: "✔";
-  color: #FFD700;
+  color: #e1e17e;
   position: absolute;
   left: 0;
 }
